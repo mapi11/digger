@@ -4,53 +4,44 @@ using UnityEngine;
 
 public class PillarPanelsScripts : MonoBehaviour
 {
-    public int[] _panelInt;
-    public GameObject[] _panel;
+    [SerializeField] private int[] _panelInt;
+    [SerializeField] private GameObject[] _panel;
+    [SerializeField] private GameObject[] _canvas;
 
-    public GameObject _goldSpawner;
-    public GameObject _gold;
+    [SerializeField] private GameObject _goldSpawner;
+    [SerializeField] private GameObject _gold;
+
+    private int _numberOfBlades;
+
+    private int a = 0;
+    private bool _GoldIsSpawned;
 
     private void Start()
     {
-        _panelInt[0] = Random.Range(0, 5);
-        _panelInt[1] = Random.Range(0, 5);
-        _panelInt[2] = Random.Range(0, 5);
+        for (int i = 0; i < _panel.Length; i++)
+        {
+            _panelInt[i] = Random.Range(0, 8);
+        }
     }
 
     public void ClickUp()
     {
-        if (_panelInt[0] != 0)
+        if (_panelInt[a] != 0)
         {
-            Destroy(_panel[0]);
+            Destroy(_panel[a]);
+            _canvas[a + 1].SetActive(true);
+
+            a++;
+            
         }
         else
         {
-            Debug.Log("Gold");
-            Instantiate(_gold, _goldSpawner.transform.position, _goldSpawner.transform.rotation, _goldSpawner.transform);
-        }
-    }
-    public void ClickMid()
-    {
-        if (_panelInt[1] != 0)
-        {
-            Destroy(_panel[1]);
-        }
-        else
-        {
-            Debug.Log("Gold");
-            Instantiate(_gold, _goldSpawner.transform.position, _goldSpawner.transform.rotation, _goldSpawner.transform);
-        }
-    }
-    public void ClickDown()
-    {
-        if (_panelInt[2] != 0)
-        {
-            Destroy(_panel[2]);
-        }
-        else
-        {
-            Debug.Log("Gold");
-            Instantiate(_gold, _goldSpawner.transform.position, _goldSpawner.transform.rotation, _goldSpawner.transform);
+            if (_GoldIsSpawned == false)
+            {
+                _GoldIsSpawned = true;
+                Instantiate(_gold, _goldSpawner.transform.position, _goldSpawner.transform.rotation, _goldSpawner.transform);
+            }
+
         }
     }
 }

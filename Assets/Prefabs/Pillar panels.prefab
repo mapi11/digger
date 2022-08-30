@@ -52,8 +52,15 @@ MonoBehaviour:
   - {fileID: 6485442836241371135}
   - {fileID: 6485442836484600384}
   - {fileID: 6485442835370206256}
+  _canvas:
+  - {fileID: 6485442834761213870}
+  - {fileID: 6485442834736060945}
+  - {fileID: 6485442835768691809}
+  a: 0
+  MaxA: 0
   _goldSpawner: {fileID: 3930919912972235536}
   _gold: {fileID: 8096856367102698059, guid: d566e2ba5f7b0e1408f81e16d39fb0f3, type: 3}
+  _numberOfBlades: 0
 --- !u!1 &3930919912972235536
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +104,7 @@ PrefabInstance:
       objectReference: {fileID: 5227027353154348474}
     - target: {fileID: 3211241771937450028, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ClickDown
+      value: ClickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3211241771937450028, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -161,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3211241772567049248, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
@@ -173,6 +180,11 @@ GameObject:
 --- !u!4 &6485442835370206220 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3211241772161080397, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
+  m_PrefabInstance: {fileID: 8543456607715555393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6485442835768691809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3211241772567049248, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
   m_PrefabInstance: {fileID: 8543456607715555393}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8543456608813493809
@@ -188,7 +200,7 @@ PrefabInstance:
       objectReference: {fileID: 5227027353154348474}
     - target: {fileID: 3211241771937450028, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ClickMid
+      value: ClickUp
       objectReference: {fileID: 0}
     - target: {fileID: 3211241771937450028, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -252,7 +264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3211241772567049248, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
@@ -264,6 +276,11 @@ GameObject:
 --- !u!4 &6485442836484600444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3211241772161080397, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
+  m_PrefabInstance: {fileID: 8543456608813493809}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6485442834736060945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3211241772567049248, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
   m_PrefabInstance: {fileID: 8543456608813493809}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8543456608989631374
@@ -347,5 +364,10 @@ GameObject:
 --- !u!4 &6485442836241371075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3211241772161080397, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
+  m_PrefabInstance: {fileID: 8543456608989631374}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6485442834761213870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3211241772567049248, guid: 656270db8f72ef64ea822f376c904bd1, type: 3}
   m_PrefabInstance: {fileID: 8543456608989631374}
   m_PrefabAsset: {fileID: 0}

@@ -18,6 +18,8 @@ public class PillarPanelsScripts : MonoBehaviour
 
     private void Start()
     {
+
+
         for (int i = 0; i < _panel.Length; i++)
         {
             _panelInt[i] = Random.Range(0, 8);

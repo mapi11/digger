@@ -556,5 +556,12 @@ MonoBehaviour:
   _goldSpawner: {fileID: 4280191413592432016}
   _gold: {fileID: 8096856367102698059, guid: d566e2ba5f7b0e1408f81e16d39fb0f3, type: 3}
   _Int: 0
-  _myArray: []
   _goldIsSpawned: 0
+  _clicks: 0
+  _maxClicks: 2
+  _cantClick: 0
+  _planeMaterial:
+  - {fileID: 2100000, guid: a4f630abe76a4344faaaa2ca071fb1af, type: 2}
+  - {fileID: 2100000, guid: 146117257c8fc3240a8a302b70fedf63, type: 2}
+  - {fileID: 2100000, guid: d36be112aeded35478bd5c1464eb9a7a, type: 2}
+  _plane: {fileID: 4468668449829582616}

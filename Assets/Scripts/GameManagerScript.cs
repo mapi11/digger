@@ -17,8 +17,12 @@ public class GameManagerScript : MonoBehaviour
     private GameObject[] _GoldArray = new GameObject[0];
 
     public int _clicks;
+    public int _maxClicks = 2;
     public bool _cantClick;
+    public bool _colorChange = true;
 
+    public Material[] _planeMaterial;
+    public GameObject _plane;
 
     TakeGoldScript _takeGold;
 
@@ -53,6 +57,7 @@ public class GameManagerScript : MonoBehaviour
                 else
                 {
                     Debug.Log("Nope");
+                    _colorChange = true;
                     Click();
 
                     _clicks++;
@@ -65,19 +70,25 @@ public class GameManagerScript : MonoBehaviour
     {
         _Int = Random.Range(0, 8);
 
-        if (_clicks == 0)
+        if (_clicks == 0 && _colorChange == true)
         {
             Debug.Log("1 click");
+            _plane.GetComponent<MeshRenderer>().material = _planeMaterial[0];
         }
-        if (_clicks == 1)
+        else if (_clicks == 1 && _colorChange == true)
         {
             Debug.Log("2 click");
+            _plane.GetComponent<MeshRenderer>().material = _planeMaterial[1];
         }
-        if (_clicks == 2)
+        else if (_clicks == _maxClicks && _colorChange == true)
         {
             Debug.Log("cantClick");
+            _plane.GetComponent<MeshRenderer>().material = _planeMaterial[2];
             _cantClick = true;
         }
+
+        _colorChange = false;
+
     }
 
     public void ChangePlane()

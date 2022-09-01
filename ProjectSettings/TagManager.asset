@@ -4,13 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Gold
   - Music
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Gold
   - Water
   - UI
   - 

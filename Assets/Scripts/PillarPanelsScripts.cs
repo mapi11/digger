@@ -14,7 +14,9 @@ public class PillarPanelsScripts : MonoBehaviour
     private int _numberOfBlades;
 
     private int a = 0;
-    private bool _GoldIsSpawned;
+
+    [HideInInspector]
+    public bool _GoldIsSpawned;
 
     private void Start()
     {

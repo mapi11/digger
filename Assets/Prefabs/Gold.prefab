@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 8096856367102698063}
   - component: {fileID: 8096856367102698060}
   - component: {fileID: 8096856367102698061}
-  - component: {fileID: 8096856367102698058}
-  - component: {fileID: 2747576508050763541}
-  - component: {fileID: 3846791308137958818}
-  m_Layer: 0
+  - component: {fileID: 4638705376077953213}
+  - component: {fileID: 2865334112238806895}
+  - component: {fileID: 8994676073314463298}
+  m_Layer: 3
   m_Name: Gold
-  m_TagString: Gold
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,7 +84,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8096856367102698058
+--- !u!114 &4638705376077953213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8096856367102698059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8994676073314463298}
+          m_TargetAssemblyTypeName: TakeGoldScript, Assembly-CSharp
+          m_MethodName: TakeTheGold
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!65 &2865334112238806895
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,7 +126,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2747576508050763541
+--- !u!114 &8994676073314463298
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,22 +135,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8096856367102698059}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d5e95260dc08e048a059b54f7d19721, type: 3}
+  m_Script: {fileID: 11500000, guid: 344200ed1276a97408ffe385974ecc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &3846791308137958818
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8096856367102698059}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  _GoldIsPicked: 0

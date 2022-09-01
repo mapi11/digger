@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 645cf956be1a48f4bbd53ebd4b946400
+guid: 64a372a0b17cb8449858639ce2ee90c1
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2369314315808484774
-    second: MusicImage_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -44,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -104,28 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: MusicImage_0
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 61
-        width: 140
-        height: 134
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a52dcf4de218e1fd0800000000000000
-      internalID: -2369314315808484774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

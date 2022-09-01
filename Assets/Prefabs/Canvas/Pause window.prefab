@@ -349,9 +349,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3330388154169779291, guid: ecea9193e117788489aef1082059f2b9, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844174916486101427, guid: ecea9193e117788489aef1082059f2b9, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5459786024301056552, guid: ecea9193e117788489aef1082059f2b9, type: 3}
       propertyPath: m_Name
       value: pMid
+      objectReference: {fileID: 0}
+    - target: {fileID: 5459786024301056552, guid: ecea9193e117788489aef1082059f2b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627365875353795324, guid: ecea9193e117788489aef1082059f2b9, type: 3}
+      propertyPath: m_text
+      value: Pause
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecea9193e117788489aef1082059f2b9, type: 3}
@@ -371,12 +387,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e684949857b40e14ab30242d4bf5847b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &527869938221043564 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3330388154169779291, guid: ecea9193e117788489aef1082059f2b9, type: 3}
+  m_PrefabInstance: {fileID: 2982707353565047607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4895402438874364257
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2463518563674759220}
+    m_TransformParent: {fileID: 527869938221043564}
     m_Modifications:
     - target: {fileID: 3361882853097355414, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
       propertyPath: m_Pivot.x
@@ -517,7 +538,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2463518563674759220}
+    m_TransformParent: {fileID: 527869938221043564}
     m_Modifications:
     - target: {fileID: 3361882853097355414, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
       propertyPath: m_Pivot.x
@@ -589,7 +610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3361882853097355414, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -210
+      value: -194
       objectReference: {fileID: 0}
     - target: {fileID: 3361882853097355414, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

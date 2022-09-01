@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3071767864609352999}
   - component: {fileID: 2748475748838787142}
+  - component: {fileID: 7457477709368820123}
   m_Layer: 0
   m_Name: Lofi music prefab 2
-  m_TagString: Music
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,3 +128,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7457477709368820123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5124214037272713329}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ece0eaa792c103498bf631489f95c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

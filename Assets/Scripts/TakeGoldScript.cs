@@ -5,18 +5,21 @@ using UnityEngine;
 public class TakeGoldScript : MonoBehaviour
 {
     GlobalScoreScript _globalScore;
+    GameManagerScript _gameManager;
 
-    public bool _GoldIsPicked;
+    public bool _GoldIsDestroyed;
 
     private void Start()
     {
         _globalScore = FindObjectOfType<GlobalScoreScript>();
+        _gameManager = FindObjectOfType<GameManagerScript>();
     }
 
     public void TakeTheGold()
     {
-        _GoldIsPicked = true;
+        _gameManager.Click();
         Destroy(gameObject);
+
         _globalScore._score++;
     }
 }

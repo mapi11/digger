@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PillarPanelsScripts : MonoBehaviour
 {
-    [SerializeField] private int[] _panelInt;
+    [SerializeField] private int[] _panelInt;                                                       //Old script
     [SerializeField] private GameObject[] _panel;
     [SerializeField] private GameObject[] _canvas;
 
@@ -15,12 +15,13 @@ public class PillarPanelsScripts : MonoBehaviour
 
     private int a = 0;
 
-    [HideInInspector]
+    TakeGoldScript _goldScript;
+
     public bool _GoldIsSpawned;
 
     private void Start()
     {
-
+        _goldScript = FindObjectOfType<TakeGoldScript>();
 
         for (int i = 0; i < _panel.Length; i++)
         {
@@ -30,22 +31,21 @@ public class PillarPanelsScripts : MonoBehaviour
 
     public void ClickUp()
     {
+
         if (_panelInt[a] != 0)
         {
             Destroy(_panel[a]);
             _canvas[a + 1].SetActive(true);
 
             a++;
-            
-        }
-        else
-        {
-            if (_GoldIsSpawned == false)
+            if (_panelInt[a] == 0)
             {
-                _GoldIsSpawned = true;
                 Instantiate(_gold, _goldSpawner.transform.position, _goldSpawner.transform.rotation, _goldSpawner.transform);
-            }
 
+                _canvas[a].SetActive(false);
+
+                a++;
+            }
         }
     }
 }

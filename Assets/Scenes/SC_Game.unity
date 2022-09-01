@@ -187,14 +187,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6288608229903831254, guid: c215e1e9b777d1a4486908d6be0cbebe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6288608229903831254, guid: c215e1e9b777d1a4486908d6be0cbebe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7624229656910850126, guid: c215e1e9b777d1a4486908d6be0cbebe, type: 3}
       propertyPath: m_Name
       value: GameManager

@@ -3,23 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-
 public class GlobalScoreScript : MonoBehaviour
 {
+    [HideInInspector]
     public int _score = 0;
-    public int _blades = 20;
+    //[HideInInspector]
+    public int _blades = 0;
 
-    public bool _loose;
-    public bool _win;
-
-    //[SerializeField] private TextMeshProUGUI _txtScore;
-    //[SerializeField] private TextMeshProUGUI _txtBlades;
+    [SerializeField] private TextMeshProUGUI _txtScore;
+    [SerializeField] private TextMeshProUGUI _txtBlades;
 
     [SerializeField] private GameObject _parent;
     [SerializeField] private GameObject _LooseWindow;
     [SerializeField] private GameObject _WinWindow;
-
-    
 
     private void Start()
     {
@@ -28,17 +24,8 @@ public class GlobalScoreScript : MonoBehaviour
 
     private void Update()
     {
-        //_txtSBlades.text = _blades.ToString("Blades: " + _blades);
-        //_txtBlades.text = _blades.ToString("Blades: " + _blades);
-
-        if (_score >= 3)
-        {
-            _win = true;
-        }
-        if (_blades <= 0)
-        {
-            _loose = true;
-        }
+        _txtBlades.text = _blades.ToString("Blades:" + _blades); // Никак не могу понять почему при десятичных числах первая цифа двоится при выводе именный в этой переменной
+        _txtScore.text = _score.ToString("Score:" + _score);
     }
 
     public void Loose()

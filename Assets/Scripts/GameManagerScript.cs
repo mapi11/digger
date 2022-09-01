@@ -15,13 +15,13 @@ public class GameManagerScript : MonoBehaviour
     public bool _goldIsSpawned;
     private GameObject[] _GoldArray = new GameObject[0];
 
-    public int _clicks;
-    public int _maxClicks = 2;
-    public bool _cantClick;
-    public bool _colorChange;
+    private int _clicks;
+    private int _maxClicks = 2;
+    private bool _cantClick;
+    private bool _colorChange;
 
-    public Material[] _planeMaterial;
-    public GameObject _plane;
+    [SerializeField] private Material[] _planeMaterial;
+    [SerializeField] private GameObject _plane;
 
     TakeGoldScript _takeGold;
     GlobalScoreScript _globalScore;
@@ -87,18 +87,17 @@ public class GameManagerScript : MonoBehaviour
         }
         else if (_clicks == 1 && _colorChange == true)
         {
-            //Debug.Log("2 click");
+            //Debug.Log("2 clicks");
             _plane.GetComponent<MeshRenderer>().material = _planeMaterial[1];
         }
         else if (_clicks == _maxClicks && _colorChange == true)
         {
-            //Debug.Log("cantClick");
+            //Debug.Log("can`tClick");
             _plane.GetComponent<MeshRenderer>().material = _planeMaterial[2];
             _cantClick = true;
         }
 
         _colorChange = false;
-
     }
 }
 

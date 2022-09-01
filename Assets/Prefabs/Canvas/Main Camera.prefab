@@ -277,8 +277,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _score: 0
   _blades: 0
-  _loose: 0
-  _win: 0
   _txtScore: {fileID: 1538028734966516846}
   _txtBlades: {fileID: 3898134720545865225}
   _parent: {fileID: 0}

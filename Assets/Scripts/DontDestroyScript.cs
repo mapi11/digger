@@ -8,7 +8,7 @@ public class DontDestroyScript : MonoBehaviour
     {
         GameObject[] _musicObj = GameObject.FindGameObjectsWithTag("Music");
 
-        if (_musicObj.Length > 1)
+        if (_musicObj.Length >= 2)
         {
             Destroy(this.gameObject);
 

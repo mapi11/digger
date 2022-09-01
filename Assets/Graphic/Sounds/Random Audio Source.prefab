@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7857029636527825507}
   - component: {fileID: 3467334354119777016}
+  - component: {fileID: 2078594728}
   m_Layer: 0
   m_Name: Random Audio Source
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,3 +49,15 @@ MonoBehaviour:
   - {fileID: 5124214037272713329, guid: c165cbf22ed566645b551370d83ccca0, type: 3}
   - {fileID: 5124214037272713329, guid: e3d998a47ba97804984f1aabd2ab48cc, type: 3}
   _parent: {fileID: 7857029636527825506}
+--- !u!114 &2078594728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7857029636527825506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ece0eaa792c103498bf631489f95c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

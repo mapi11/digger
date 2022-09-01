@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Music
   - Gold
+  - MusicScene
   layers:
   - Default
   - TransparentFX

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Assertions.Must;
 using UnityEngine.UIElements;
 
 public class GameManagerScript : MonoBehaviour
@@ -19,12 +18,13 @@ public class GameManagerScript : MonoBehaviour
     public int _clicks;
     public int _maxClicks = 2;
     public bool _cantClick;
-    public bool _colorChange = true;
+    public bool _colorChange;
 
     public Material[] _planeMaterial;
     public GameObject _plane;
 
     TakeGoldScript _takeGold;
+    GlobalScoreScript _globalScore;
 
     private void Update()
     {
@@ -34,6 +34,9 @@ public class GameManagerScript : MonoBehaviour
     private void Start()
     {
         _takeGold = FindObjectOfType<TakeGoldScript>();
+        _globalScore = FindObjectOfType<GlobalScoreScript>();
+
+        _globalScore._blades = 20;
 
         _Int = Random.Range(0, 8);
 
@@ -47,7 +50,7 @@ public class GameManagerScript : MonoBehaviour
             {
                 if (_Int == 0)
                 {
-                    Debug.Log("Gold");
+                    //Debug.Log("Gold");
                     Instantiate(_gold, _goldSpawner.transform.position, _goldSpawner.transform.rotation, _goldSpawner.transform);
 
                     Click();
@@ -56,11 +59,18 @@ public class GameManagerScript : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Nope");
+                    //Debug.Log("Nope");
                     _colorChange = true;
                     Click();
 
                     _clicks++;
+
+                    _globalScore._blades--;
+
+                    if (_globalScore._blades <= 0)
+                    {
+                        _globalScore.Loose();
+                    }
                 }
             }
         }
@@ -72,27 +82,22 @@ public class GameManagerScript : MonoBehaviour
 
         if (_clicks == 0 && _colorChange == true)
         {
-            Debug.Log("1 click");
+            //Debug.Log("1 click");
             _plane.GetComponent<MeshRenderer>().material = _planeMaterial[0];
         }
         else if (_clicks == 1 && _colorChange == true)
         {
-            Debug.Log("2 click");
+            //Debug.Log("2 click");
             _plane.GetComponent<MeshRenderer>().material = _planeMaterial[1];
         }
         else if (_clicks == _maxClicks && _colorChange == true)
         {
-            Debug.Log("cantClick");
+            //Debug.Log("cantClick");
             _plane.GetComponent<MeshRenderer>().material = _planeMaterial[2];
             _cantClick = true;
         }
 
         _colorChange = false;
-
-    }
-
-    public void ChangePlane()
-    {
 
     }
 }

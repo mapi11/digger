@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2030267333647524430}
   - component: {fileID: 7610425646663363457}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Text (Number of blades)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,8 +165,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 3632924371420587362}
   - {fileID: 5159295198945562872}
+  - {fileID: 3632924371420587362}
   - {fileID: 305467528854930121}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 5621346350452457133}
   - component: {fileID: 5394593073539914214}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Text (Score)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -414,7 +414,7 @@ RectTransform:
   m_Children:
   - {fileID: 2817963830887667194}
   m_Father: {fileID: 4181563309786412108}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -490,7 +490,7 @@ RectTransform:
   m_Children:
   - {fileID: 8604397209369907131}
   m_Father: {fileID: 4181563309786412108}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

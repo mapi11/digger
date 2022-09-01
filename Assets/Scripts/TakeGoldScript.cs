@@ -21,5 +21,10 @@ public class TakeGoldScript : MonoBehaviour
         Destroy(gameObject);
 
         _globalScore._score++;
+
+        if (_globalScore._score >= 3)
+        {
+            _globalScore.Win();
+        }
     }
 }

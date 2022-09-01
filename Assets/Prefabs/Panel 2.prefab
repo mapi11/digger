@@ -560,6 +560,7 @@ MonoBehaviour:
   _clicks: 0
   _maxClicks: 2
   _cantClick: 0
+  _colorChange: 0
   _planeMaterial:
   - {fileID: 2100000, guid: a4f630abe76a4344faaaa2ca071fb1af, type: 2}
   - {fileID: 2100000, guid: 146117257c8fc3240a8a302b70fedf63, type: 2}

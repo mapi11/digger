@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2030267333647524430}
   - component: {fileID: 7610425646663363457}
   m_Layer: 0
-  m_Name: Text (Number of blades)
+  m_Name: Text (txt)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,6 +28,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3632924371420587362}
   m_RootOrder: 0
@@ -65,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Blades: 20'
+  m_text: 'Clickss: 20'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -164,9 +165,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5159295198945562872}
   - {fileID: 3632924371420587362}
+  - {fileID: 5159295198945562872}
   - {fileID: 305467528854930121}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -261,7 +263,7 @@ GameObject:
   - component: {fileID: 5621346350452457133}
   - component: {fileID: 5394593073539914214}
   m_Layer: 0
-  m_Name: Text (Score)
+  m_Name: Text (txt)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,6 +279,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5159295198945562872}
   m_RootOrder: 0
@@ -395,7 +398,7 @@ GameObject:
   - component: {fileID: 9175780731795806441}
   - component: {fileID: 2951693294072036384}
   m_Layer: 0
-  m_Name: Number of blades
+  m_Name: clickss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -411,10 +414,11 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2817963830887667194}
   m_Father: {fileID: 4181563309786412108}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -487,10 +491,11 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.000012874}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8604397209369907131}
   m_Father: {fileID: 4181563309786412108}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -660,14 +665,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
---- !u!1 &1697414083498718495 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4401317147274841920, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
-  m_PrefabInstance: {fileID: 3070034092445186655}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &305467528854930121 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3361882853097355414, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
+  m_PrefabInstance: {fileID: 3070034092445186655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1697414083498718495 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4401317147274841920, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
   m_PrefabInstance: {fileID: 3070034092445186655}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2901359623678936721

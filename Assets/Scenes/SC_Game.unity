@@ -130,10 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1033375844334415716, guid: 62e9cdee093e1764dbfdce09c902652c, type: 3}
-      propertyPath: m_Name
-      value: Number of shovels
-      objectReference: {fileID: 0}
     - target: {fileID: 7314611611092400459, guid: 62e9cdee093e1764dbfdce09c902652c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -181,10 +177,6 @@ PrefabInstance:
     - target: {fileID: 7314611611092400462, guid: 62e9cdee093e1764dbfdce09c902652c, type: 3}
       propertyPath: m_Name
       value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 8927111336013799219, guid: 62e9cdee093e1764dbfdce09c902652c, type: 3}
-      propertyPath: m_Name
-      value: Text (Number of shovels)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62e9cdee093e1764dbfdce09c902652c, type: 3}

@@ -8,7 +8,7 @@ public class GlobalScoreScript : MonoBehaviour
     [HideInInspector]
     public int _score = 0;
     //[HideInInspector]
-    public int _blades = 0;
+    public int _blades = 20;
 
     [SerializeField] private TextMeshProUGUI _txtScore;
     [SerializeField] private TextMeshProUGUI _txtBlades;

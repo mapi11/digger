@@ -38,7 +38,7 @@ public class GameManagerScript : MonoBehaviour
 
         _globalScore._blades = 20;
 
-        _Int = Random.Range(0, 8);
+        Debug.Log(_globalScore._blades);
 
     }
 

@@ -27,6 +27,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5119377797912085749}
   m_Father: {fileID: 0}
@@ -79,6 +80,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3059145128302944825}
   - {fileID: 2463518563674759220}
@@ -371,6 +373,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecea9193e117788489aef1082059f2b9, type: 3}
+--- !u!224 &527869938221043564 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3330388154169779291, guid: ecea9193e117788489aef1082059f2b9, type: 3}
+  m_PrefabInstance: {fileID: 2982707353565047607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2463518563674759220 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 816446328347986691, guid: ecea9193e117788489aef1082059f2b9, type: 3}
@@ -387,11 +394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e684949857b40e14ab30242d4bf5847b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &527869938221043564 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3330388154169779291, guid: ecea9193e117788489aef1082059f2b9, type: 3}
-  m_PrefabInstance: {fileID: 2982707353565047607}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4895402438874364257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -399,6 +401,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 527869938221043564}
     m_Modifications:
+    - target: {fileID: 2202664789268380820, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -9219837321919759115, guid: 4b858c82c465f0e4991ab7c190f921d5, type: 3}
     - target: {fileID: 3361882853097355414, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -500,6 +506,10 @@ PrefabInstance:
       value: btn ReloadScene
       objectReference: {fileID: 0}
     - target: {fileID: 7575979869439928372, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 4353498635125402171, guid: c9b8aaab6dec8d84ab106960c25c0c89, type: 3}
+    - target: {fileID: 7575979869439928372, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -540,6 +550,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 527869938221043564}
     m_Modifications:
+    - target: {fileID: 2202664789268380820, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -9219837321919759115, guid: 4b858c82c465f0e4991ab7c190f921d5, type: 3}
     - target: {fileID: 3361882853097355414, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -640,6 +654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: btn MainMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 7575979869439928372, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 4353498635125402171, guid: c9b8aaab6dec8d84ab106960c25c0c89, type: 3}
     - target: {fileID: 7575979869439928372, guid: 7e445e084462033499e6715627a9f4dd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 5

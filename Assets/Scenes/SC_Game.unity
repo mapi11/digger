@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 705507995, guid: 62e9cdee093e1764dbfdce09c902652c, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314611609128773648, guid: 62e9cdee093e1764dbfdce09c902652c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314611609656418756, guid: 62e9cdee093e1764dbfdce09c902652c, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7314611611092400459, guid: 62e9cdee093e1764dbfdce09c902652c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -174,10 +186,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7314611611092400460, guid: 62e9cdee093e1764dbfdce09c902652c, type: 3}
-      propertyPath: far clip plane
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 7314611611092400462, guid: 62e9cdee093e1764dbfdce09c902652c, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -191,6 +199,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1591040008543377742, guid: c215e1e9b777d1a4486908d6be0cbebe, type: 3}
+      propertyPath: _takeGoldTxt
+      value: 
+      objectReference: {fileID: 7333273148862953233, guid: 58c369562adce2342989141a9e68c8c7, type: 3}
     - target: {fileID: 7624229656910850126, guid: c215e1e9b777d1a4486908d6be0cbebe, type: 3}
       propertyPath: m_Name
       value: GameManager

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -9,15 +8,15 @@ public class GameManagerScript : MonoBehaviour
     [SerializeField] private GameObject _goldSpawner;
     [HideInInspector]
     [SerializeField] private GameObject _gold;
-    [HideInInspector]
+
     public int _Int;
-    [HideInInspector]
-    public bool _goldIsSpawned;
+
     private GameObject[] _GoldArray = new GameObject[0];
 
     private int _clicks;
     private int _maxClicks = 2;
     private bool _cantClick;
+
     private bool _colorChange;
 
     [SerializeField] private Material[] _planeMaterial;
@@ -36,7 +35,7 @@ public class GameManagerScript : MonoBehaviour
         _takeGold = FindObjectOfType<TakeGoldScript>();
         _globalScore = FindObjectOfType<GlobalScoreScript>();
 
-        _globalScore._blades = 20;
+        //_globalScore._blades = 20;
 
         _Int = Random.Range(0, 8);
 
@@ -54,8 +53,6 @@ public class GameManagerScript : MonoBehaviour
                     Instantiate(_gold, _goldSpawner.transform.position, _goldSpawner.transform.rotation, _goldSpawner.transform);
 
                     Click();
-
-                    _goldIsSpawned = true;
                 }
                 else
                 {
@@ -65,9 +62,9 @@ public class GameManagerScript : MonoBehaviour
 
                     _clicks++;
 
-                    _globalScore._blades--;
+                    _globalScore._clicks--;
 
-                    if (_globalScore._blades <= 0)
+                    if (_globalScore._clicks <= 0)
                     {
                         _globalScore.Loose();
                     }
@@ -92,7 +89,7 @@ public class GameManagerScript : MonoBehaviour
         }
         else if (_clicks == _maxClicks && _colorChange == true)
         {
-            //Debug.Log("can`tClick");
+            //Debug.Log("can`t click");
             _plane.GetComponent<MeshRenderer>().material = _planeMaterial[2];
             _cantClick = true;
         }

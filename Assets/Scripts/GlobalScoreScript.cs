@@ -6,9 +6,9 @@ using TMPro;
 public class GlobalScoreScript : MonoBehaviour
 {
     [HideInInspector]
-    public int _score = 0;
+    public int _score;
     //[HideInInspector]
-    public int _blades = 0;
+    public int _clicks;
 
     [SerializeField] private TextMeshProUGUI _txtScore;
     [SerializeField] private TextMeshProUGUI _txtBlades;
@@ -20,12 +20,14 @@ public class GlobalScoreScript : MonoBehaviour
     private void Start()
     {
         _parent = GameObject.Find("Main canvas");
+
+        _clicks = 20;
     }
 
     private void Update()
     {
-        _txtBlades.text = _blades.ToString("Blades:" + _blades); // Никак не могу понять почему при десятичных числах первая цифа двоится при выводе именный в этой переменной
-        _txtScore.text = _score.ToString("Score:" + _score);
+        _txtBlades.text = "Clicks:" + _clicks;
+        _txtScore.text = "Score:" + _score;
     }
 
     public void Loose()

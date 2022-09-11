@@ -5,11 +5,12 @@ using UnityEngine;
 public class SettingsWindowScript : MonoBehaviour
 {
     [SerializeField] private GameObject _parent;
+    [SerializeField] private GameObject _settingsButton;
     [SerializeField] private GameObject _settingsWindow;
 
     private void Start()
     {
-        _parent = GameObject.Find("Main canvas");
+        _parent = GameObject.Find("pMenuLeft");
     }
 
     public void Press()

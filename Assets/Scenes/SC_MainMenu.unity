@@ -320,6 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parent: {fileID: 0}
+  _settingsButton: {fileID: 0}
   _settingsWindow: {fileID: 727682299090305816, guid: c29022aa87c934d49b8bb18fd57dbd98, type: 3}
 --- !u!1001 &1604353955
 PrefabInstance:
@@ -716,7 +717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5459786024301056552, guid: ecea9193e117788489aef1082059f2b9, type: 3}
       propertyPath: m_Name
-      value: pLeft
+      value: pMenuLeft
       objectReference: {fileID: 0}
     - target: {fileID: 7627365875353795324, guid: ecea9193e117788489aef1082059f2b9, type: 3}
       propertyPath: m_text

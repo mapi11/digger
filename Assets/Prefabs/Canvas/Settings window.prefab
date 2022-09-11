@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parent: {fileID: 0}
+  _settingsButton: {fileID: 0}
   _settingsWindow: {fileID: 727682299090305816}
 --- !u!1001 &394780347
 PrefabInstance:
@@ -278,7 +279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 816446328347986691, guid: ecea9193e117788489aef1082059f2b9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -93
+      value: 887
       objectReference: {fileID: 0}
     - target: {fileID: 816446328347986691, guid: ecea9193e117788489aef1082059f2b9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -601,4 +602,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parent: {fileID: 0}
+  _settingsButton: {fileID: 0}
   _settingsWindow: {fileID: 727682299090305816}
